@@ -73,7 +73,7 @@ def extract(length): #Length is the number of speeches to be extracted
     while k!='no':
         word=input("Enter a word : ").lower()
         try:
-            print("The word", word,"occured a total of", word2count[word],"times in", len(df),"speeches.\nThe frequency of word", word,"is",freq_word[word])
+            print("The word", word,"occured a total of", word2count[word],"times in", len(df1),"speeches.\nThe frequency of word", word,"is",freq_word[word])
         except:
             print("This word was not said in any of the extracted speeches.")
         k=input("Press enter to continue or 'no' to end. ").lower()
