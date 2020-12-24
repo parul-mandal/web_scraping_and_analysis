@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 import time
 from nltk.tokenize import TweetTokenizer
 def extract(length): #Length is the number of speeches to be extracted
-    driver=webdriver.Chrome(executable_path='C:\webdrivers\chromedriver.exe')#Path of chromedriver.exe(For Chrome)
+    driver=webdriver.Chrome(executable_path=PATH)#Path of chromedriver.exe(For Chrome)
     url = "https://www.pmindia.gov.in/en/tag/pmspeech/"
     driver.get(url) #Opens the url in the driver window
     content_area = driver.find_elements_by_class_name('news-description')#Fetches a list of web content for each element with class name 'news-description'
